@@ -1,6 +1,6 @@
-(ns util.file-utils
+(ns advent-of-code-2023.util.file-utils
   (:require [clojure.java.io :as io]
-            [util.constants :as c]))
+            [advent-of-code-2023.util.constants :as c]))
 
 (defn data-file
   "get full data file path"

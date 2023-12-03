@@ -1,5 +1,5 @@
-(ns day1
-  (:require [util.file-utils :as f]))
+(ns advent-of-code-2023.days.day1
+  (:require [advent-of-code-2023.util.file-utils :as f]))
 
 (defn get-all-digits
   [line]
@@ -16,7 +16,3 @@
    (let [lines (f/read-file-lines file-name)]
      (reduce + (for [line lines]
                  (calibration-value (get-all-digits line)))))))
-
-(defn -main [& args]
-  (let [file-name (if (nil? args) (f/data-file "day1") (first args))]
-    (println (part1 file-name))))
